@@ -1,0 +1,12 @@
+# Ignore large raw and processed data fractions
+data/raw/*
+data/processed/*
+
+# Ignore heavy binary model file formats
+models/*.pkl
+models/*.h5
+
+# Ignore localized environment logs
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
