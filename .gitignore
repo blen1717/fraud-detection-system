@@ -1,12 +1,20 @@
-# Ignore large raw and processed data fractions
-data/raw/*
-data/processed/*
+%%writefile .gitignore
+# Data files
+data/raw/*.csv
+data/processed/*.csv
+*.csv
 
-# Ignore heavy binary model file formats
-models/*.pkl
-models/*.h5
-
-# Ignore localized environment logs
+# Jupyter Notebooks (if you want to exclude them)
 .ipynb_checkpoints/
-__pycache__/
+*.ipynb
+
+# Python cache
+pycache/
 *.pyc
+
+# Virtual environment
+venv/
+env/
+
+# Environment files
+.env
