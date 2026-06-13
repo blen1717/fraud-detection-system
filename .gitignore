@@ -1,20 +1,39 @@
-%%writefile .gitignore
-# Data files
-data/raw/*.csv
-data/processed/*.csv
+## 📄 .gitignore
+
+`gitignore
+# Data files (large, sensitive)
+data/raw/
 *.csv
 
-# Jupyter Notebooks (if you want to exclude them)
-.ipynb_checkpoints/
-*.ipynb
+# Processed data (can be regenerated)
+data/processed/
 
 # Python cache
 pycache/
 *.pyc
+*.pyo
+*.pyd
 
-# Virtual environment
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Virtual environments
 venv/
 env/
+.venv
 
-# Environment files
-.env
+# IDE / OS files
+.DS_Store
+.vscode/
+.idea/
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Model binaries (optional – can be regenerated)
+models/*.pkl
+
+# SHAP plots (optional – keep them if you want, but not required)
+# reports/*.png
